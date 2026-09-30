@@ -146,3 +146,66 @@
 # greet()
 
 ##-----------------------------------------
+
+# from functools import wraps
+
+# def decorator(func):
+
+#     @wraps(func)
+#     def wrapper(*args, **kwargs):
+
+#         # logic before
+
+#         result = func(*args, **kwargs)
+
+#         # logic after
+
+#         return result
+
+#     return wrapper
+
+# @decorator
+# def add(a, b):
+#     """Adds two numbers."""
+#     return a + b
+
+# print(add.__name__)
+
+##-----------------------------------------------------------------------------
+
+
+# class Employee:
+
+#     company = "ABC"
+
+#     def __init__(self, name, salary):
+#         self.name = name
+#         self._salary = salary
+
+#     @property
+#     def salary(self):
+#         return self._salary
+
+#     @salary.setter
+#     def salary(self, value):
+
+#         if value < 0:
+#             raise ValueError("Salary cannot be negative")
+
+#         self._salary = value
+
+#     @classmethod
+#     def company_name(cls):
+#         return cls.company
+
+#     @staticmethod
+#     def is_valid_salary(value):
+#         return value >= 0
+# employee=Employee("Rahul",5000)  
+# print(employee.salary)
+# print(Employee.company_name())
+# Employee.is_valid_salary(5000)
+
+
+##-----------------------------------------------------------------------
+
