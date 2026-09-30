@@ -47,3 +47,102 @@
     
 # create_user()
 
+##--------------------------------------------------------------------
+
+
+# def logger(func):
+    
+#     def wrapper(*args, **kwargs):
+#         print(f"calling {func.__name__  }")
+#         result=func(*args, **kwargs)
+        
+#         return result
+    
+        
+#     return wrapper
+
+# @logger
+# def create_user(a,b):
+#     return a+b
+
+# r=create_user(2,6)   
+# print(r)
+
+##----------------------------------------------------------------
+
+# def uppercase(func):
+
+#     def wrapper(*args, **kwargs):
+
+#         result = func(*args, **kwargs)
+
+#         return result.upper()
+
+#     return wrapper
+
+# @uppercase
+# def get_name():
+#     return "gurucharan"
+
+# print(get_name())
+
+#---------------------------------------------------------------------
+
+# def check_age(func):
+#     def wrapper(age):
+        
+#         if age<18:
+#             print("access denied")
+            
+#             return
+        
+#         return func(age)
+    
+#     return wrapper
+
+# @check_age
+# def access_account(age):
+#     print("opened account")
+    
+# access_account(17)
+
+##------------------------------------------------------------
+
+
+# def first(func):
+#     def wrapper():
+#         print("first")
+#         func()
+        
+#     return wrapper
+
+# def second(func):
+#     def wrapper():
+#         print("second")
+#         func()
+        
+#     return wrapper
+
+# @first
+# @second
+# def greet():
+#     print("Hello")
+
+##-----------------------------------------------------------
+
+# def repeat(times):
+#     def decorator(func):
+#         def wrapper(*args, **kwargs):
+                
+#             for _ in range(times):
+#                 func(*args, **kwargs)
+#         return wrapper
+#     return decorator
+            
+# @repeat(6)
+# def greet():
+#     print("hello")
+    
+# greet()
+
+##-----------------------------------------
